@@ -2,10 +2,24 @@
     color: black;
     height: 25%;
     margin: 1em 2em;
-    display: grid;
+    display: flex;
+    width: 100%;
 
     &__elements{
-        // grid-template-columns: 1fr 2fr;
+        display: flex;
+        justify-content: flex-end;
+
+        &--box{
+            height: 5em;
+            width: 5em;
+            text-align: center;
+            color: white;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1em;
+        }
     }
 
     &__text{

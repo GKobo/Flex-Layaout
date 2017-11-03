@@ -16,9 +16,22 @@
 .header {
   color: black;
   height: 25%;
-  width: 100%;
   margin: 1em 2em;
-  display: grid; }
+  display: flex;
+  width: 100%; }
+  .header__elements {
+    display: flex;
+    justify-content: flex-end; }
+    .header__elements--box {
+      height: 5em;
+      width: 5em;
+      text-align: center;
+      color: white;
+      background-color: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1em; }
   .header__text {
     width: 25%;
     font-size: fs("mega"); }
