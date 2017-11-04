@@ -15,22 +15,33 @@
 @import 'base/typography.scss';
 
 /*------------------------------------*\
+                ELEMENTS
+\*------------------------------------*/
+
+@import 'elements/buttons.scss';
+@import 'elements/carousel.scss';
+@import 'elements/dropdown.scss';
+@import 'elements/input.scss';
+
+/*------------------------------------*\
+                LAYOUT
+\*------------------------------------*/
+
+@import 'layout/footer.scss';
+@import 'layout/forms.scss';
+@import 'layout/grid.scss';
+@import 'layout/header.scss';
+@import 'layout/text.scss';
+
+/*------------------------------------*\
                 COMPONENTS
 \*------------------------------------*/
 
-@import 'components/buttons.scss';
-@import 'components/carousel.scss';
-@import 'components/dropdown.scss';
-@import 'components/input.scss';
-
-/*------------------------------------*\
-                LAYAOUT
-\*------------------------------------*/
-
-@import 'layaout/footer.scss';
-@import 'layaout/forms.scss';
-@import 'layaout/grid.scss';
-@import 'layaout/header.scss';
+@import 'components/justify-content.scss';
+@import 'components/2.scss';
+// @import 'components/carousel.scss';
+// @import 'components/dropdown.scss';
+// @import 'components/input.scss';
 
 /*------------------------------------*\
                 THEMES

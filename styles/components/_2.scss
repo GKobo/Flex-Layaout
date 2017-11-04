@@ -1,29 +1,29 @@
-.header{
+.flex-2{
     color: black;
     height: 25%;
     margin: 1em 2em;
     display: flex;
-    width: 100%;
+    align-items: center;
+   background-color: #319589;
 
     &__elements{
         display: flex;
         justify-content: flex-end;
+        width: calc(100% - #{$margin-text});
+        align-items: flex-start;
+        
 
         &--box{
             height: 5em;
             width: 5em;
             text-align: center;
-            color: white;
-            background-color: aqua;
+            color: $white;
+            background-color: $box-color;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 1em;
+            
         }
-    }
-
-    &__text{
-        width: 25%;
-        font-size: fs("mega");
     }
 }

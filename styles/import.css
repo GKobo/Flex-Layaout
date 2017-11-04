@@ -5,36 +5,154 @@
 		$FONT-SIZES
 \*------------------------------------*/
 /*------------------------------------*\
+		$COLOURS
+\*------------------------------------*/
+/*------------------------------------*\
+		$MARGIN
+\*------------------------------------*/
+/*------------------------------------*\
                 BASE
 \*------------------------------------*/
 /*------------------------------------*\
-                COMPONENTS
+                ELEMENTS
 \*------------------------------------*/
 /*------------------------------------*\
-                LAYAOUT
+                LAYOUT
 \*------------------------------------*/
-.header {
-  color: black;
-  height: 25%;
-  margin: 1em 2em;
+.form-1 {
   display: flex;
-  width: 100%; }
-  .header__elements {
-    display: flex;
-    justify-content: flex-end; }
-    .header__elements--box {
+  color: #fff;
+  background-color: #589FBF;
+  margin: 1em 1em;
+  padding: 1em; }
+  .form-1__text {
+    width: 50%;
+    font-size: fs("mega");
+    align-items: center;
+    color: #fff; }
+    .form-1__text--title {
+      color: #fff; }
+    .form-1__text--mesagge {
+      color: #fff; }
+  .form-1__box {
+    display: block;
+    width: calc(100% - 50%); }
+    .form-1__box--title {
+      color: #fff; }
+    .form-1__box--box {
       height: 5em;
       width: 5em;
       text-align: center;
-      color: white;
-      background-color: aqua;
+      color: #fff;
+      background-color: #001B5D;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 0 1em; }
-  .header__text {
-    width: 25%;
-    font-size: fs("mega"); }
+
+.form-2 {
+  display: flex;
+  color: #fff;
+  background-color: #319589;
+  margin: 0 1em;
+  padding: 1em; }
+  .form-2__text {
+    width: 50%;
+    font-size: fs("mega");
+    color: #fff; }
+    .form-2__text--title {
+      color: #fff; }
+    .form-2__text--mesagge {
+      color: #fff; }
+  .form-2__box {
+    display: block;
+    width: calc(100% - 50%); }
+    .form-2__box--title {
+      color: #fff; }
+    .form-2__box--box {
+      height: 5em;
+      width: 5em;
+      text-align: center;
+      color: #fff;
+      background-color: #001B5D;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1em; }
+
+.header {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  justify-content: center;
+  display: flex; }
+
+.layout-text {
+  margin: 0 2em;
+  text-align: center; }
+
+/*------------------------------------*\
+                COMPONENTS
+\*------------------------------------*/
+.justify-content {
+  color: black;
+  height: 25%;
+  margin: 1em 2em;
+  display: flex;
+  align-items: center;
+  background-color: #589FBF; }
+  .justify-content__start {
+    display: flex;
+    justify-content: flex-start; }
+    .justify-content__start--title {
+      display: flex;
+      justify-content: flex-start; }
+  .justify-content__center {
+    display: flex;
+    justify-content: center; }
+    .justify-content__center--title {
+      display: flex;
+      justify-content: center; }
+  .justify-content__end {
+    display: flex;
+    justify-content: flex-end; }
+    .justify-content__end--title {
+      display: flex;
+      justify-content: flex-end; }
+  .justify-content__arround {
+    display: flex;
+    justify-content: space-around; }
+    .justify-content__arround--title {
+      display: flex;
+      justify-content: flex-end; }
+  .justify-content__between {
+    display: flex;
+    justify-content: space-between; }
+    .justify-content__between--title {
+      display: flex;
+      justify-content: center; }
+
+.flex-2 {
+  color: black;
+  height: 25%;
+  margin: 1em 2em;
+  display: flex;
+  align-items: center;
+  background-color: #319589; }
+  .flex-2__elements {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 50%);
+    align-items: flex-start; }
+    .flex-2__elements--box {
+      height: 5em;
+      width: 5em;
+      text-align: center;
+      color: #fff;
+      background-color: #001B5D;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1em; }
 
 /*------------------------------------*\
                 THEMES
