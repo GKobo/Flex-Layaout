@@ -6,9 +6,8 @@
     padding: 1em;
 
     &__text {
-        width: $margin-text;
+        width: $width-form-text;
         font-size: fs("mega");
-        align-items: center;
         color: $white;
 
         &--title {
@@ -18,66 +17,73 @@
             color: $white;
         }
     }
+    &__content{
+        width: 100%;
+        display: flex;
+        margin-left: 1em;
+
+        &--title {
+            color: $white;
+            width: $width-form-box-text;
+            display: flex;
+            align-items: center;
+        }
+        
+        &--box{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        
+        &--box {
+            height: 5em;
+            width: 5em;
+            text-align: center;
+            color: $white;
+            background-color: $box-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1em;
+            }
+        }
+    }
+}
+
+.form-2 {
+    display: flex;
+    color: $white;
+    background-color: $property-2;
+    margin: 0 1em;
+    padding: 1em;
+
+    &__text {
+        width: $width-form-text;
+        font-size: fs("mega");
+        color: $white;
+        &--title {
+            color: $white;
+        }
+        &--mesagge {
+            color: $white;
+        }
+    }
     &__box {
         display: block;
-        width: calc(100% - #{$margin-text});
+        width: calc(100% - #{$width-form-text});
 
         &--title {
             color: $white;
         }
-            &--box {
-                height: 5em;
-                width: 5em;
-                text-align: center;
-                color: $white;
-                background-color: $box-color;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 1em;
-              
-            }
-        
+        &--box {
+            height: 5em;
+            width: 5em;
+            text-align: center;
+            color: $white;
+            background-color: $box-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1em;
+        }
     }
 }
-    .form-2 {
-        display: flex;
-        color: $white;
-        background-color: $property-2;
-        margin: 0 1em;
-        padding: 1em;
-
-        &__text {
-            width: $margin-text;
-            font-size: fs("mega");
-           
-            color: $white;
-
-            &--title {
-                color: $white;
-            }
-            &--mesagge {
-                color: $white;
-            }
-        }
-        &__box {
-            display: block;
-            width: calc(100% - #{$margin-text});
-            
-            &--title {
-                color: $white;
-            }
-            &--box {
-                    height: 5em;
-                    width: 5em;
-                    text-align: center;
-                    color: $white;
-                    background-color: $box-color;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 1em;
-                }
-       
-        }
-    }

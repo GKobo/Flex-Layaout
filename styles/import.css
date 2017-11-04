@@ -8,7 +8,7 @@
 		$COLOURS
 \*------------------------------------*/
 /*------------------------------------*\
-		$MARGIN
+		$WIDTH
 \*------------------------------------*/
 /*------------------------------------*\
                 BASE
@@ -26,29 +26,36 @@
   margin: 1em 1em;
   padding: 1em; }
   .form-1__text {
-    width: 50%;
+    width: 40%;
     font-size: fs("mega");
-    align-items: center;
     color: #fff; }
     .form-1__text--title {
       color: #fff; }
     .form-1__text--mesagge {
       color: #fff; }
-  .form-1__box {
-    display: block;
-    width: calc(100% - 50%); }
-    .form-1__box--title {
-      color: #fff; }
-    .form-1__box--box {
-      height: 5em;
-      width: 5em;
-      text-align: center;
+  .form-1__content {
+    width: 100%;
+    display: flex;
+    margin-left: 1em; }
+    .form-1__content--title {
       color: #fff;
-      background-color: #001B5D;
+      width: 30%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 1em; }
+      align-items: center; }
+    .form-1__content--box {
+      width: 100%;
+      display: flex;
+      align-items: center; }
+      .form-1__content--box--box {
+        height: 5em;
+        width: 5em;
+        text-align: center;
+        color: #fff;
+        background-color: #001B5D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1em; }
 
 .form-2 {
   display: flex;
@@ -57,7 +64,7 @@
   margin: 0 1em;
   padding: 1em; }
   .form-2__text {
-    width: 50%;
+    width: 40%;
     font-size: fs("mega");
     color: #fff; }
     .form-2__text--title {
@@ -66,7 +73,7 @@
       color: #fff; }
   .form-2__box {
     display: block;
-    width: calc(100% - 50%); }
+    width: calc(100% - 40%); }
     .form-2__box--title {
       color: #fff; }
     .form-2__box--box {
@@ -93,43 +100,21 @@
 /*------------------------------------*\
                 COMPONENTS
 \*------------------------------------*/
-.justify-content {
-  color: black;
-  height: 25%;
-  margin: 1em 2em;
+.justify-content__start {
   display: flex;
-  align-items: center;
-  background-color: #589FBF; }
-  .justify-content__start {
-    display: flex;
-    justify-content: flex-start; }
-    .justify-content__start--title {
-      display: flex;
-      justify-content: flex-start; }
-  .justify-content__center {
-    display: flex;
-    justify-content: center; }
-    .justify-content__center--title {
-      display: flex;
-      justify-content: center; }
-  .justify-content__end {
-    display: flex;
-    justify-content: flex-end; }
-    .justify-content__end--title {
-      display: flex;
-      justify-content: flex-end; }
-  .justify-content__arround {
-    display: flex;
-    justify-content: space-around; }
-    .justify-content__arround--title {
-      display: flex;
-      justify-content: flex-end; }
-  .justify-content__between {
-    display: flex;
-    justify-content: space-between; }
-    .justify-content__between--title {
-      display: flex;
-      justify-content: center; }
+  justify-content: flex-start; }
+.justify-content__center {
+  display: flex;
+  justify-content: center; }
+.justify-content__end {
+  display: flex;
+  justify-content: flex-end; }
+.justify-content__arround {
+  display: flex;
+  justify-content: space-around; }
+.justify-content__between {
+  display: flex;
+  justify-content: space-between; }
 
 .flex-2 {
   color: black;
@@ -141,7 +126,7 @@
   .flex-2__elements {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% - 50%);
+    width: calc(100% - 40%);
     align-items: flex-start; }
     .flex-2__elements--box {
       height: 5em;

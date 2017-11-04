@@ -9,7 +9,7 @@
     &__elements{
         display: flex;
         justify-content: flex-end;
-        width: calc(100% - #{$margin-text});
+        width: calc(100% - #{$width-form-text});
         align-items: flex-start;
         
 

@@ -1,49 +1,22 @@
 .justify-content {
-    color: black;
-    height: 25%;
-    margin: 1em 2em;
-    display: flex;
-    align-items: center;
-    background-color: $property-1;
-
     &__start {
         display: flex;
         justify-content: flex-start;
-        &--title {
-            display: flex;
-            justify-content: flex-start;
-        }
     }
     &__center {
         display: flex;
         justify-content: center;
-        &--title {
-            display: flex;
-            justify-content: center;
-        }
     }
     &__end {
         display: flex;
         justify-content: flex-end;
-        &--title {
-            display: flex;
-            justify-content: flex-end;
-        }
     }
     &__arround {
         display: flex;
         justify-content: space-around;
-        &--title {
-            display: flex;
-            justify-content: flex-end;
-        }
     }
     &__between {
         display: flex;
         justify-content: space-between;
-        &--title {
-            display: flex;
-            justify-content: center;
-        }
     }
 }
